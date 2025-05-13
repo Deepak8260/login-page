@@ -36,11 +36,11 @@ const Login = () => {
         </h2>
 
         <div className="flex gap-6 mb-10 w-full max-w-md">
-          <button className="flex-1 border border-[#5579d1] rounded-md py-2 text-[9px] text-center text-[#5579d1] font-light tracking-widest">
+          <button className="flex-1 bg-white border border-[#5579d1] rounded-md py-2 text-[9px] text-center text-[#5579d1] font-light tracking-widest">
             Login with Google
           </button>
-          <button className="flex-1 border border-[#5579d1] rounded-md py-2 text-[9px] text-center text-[#5579d1] font-light tracking-widest">
-            Login with Facebook
+          <button className="flex-1 bg-white border border-[#5579d1] rounded-md py-2 text-[9px] text-center text-[#5579d1] font-light tracking-widest">
+          Login with Facebook
           </button>
         </div>
 
@@ -53,15 +53,15 @@ const Login = () => {
         </div>
 
         <form className="w-full max-w-md flex flex-col gap-6">
-          <input
+        <input
             type="email"
             placeholder="Email"
-            className="border-b border-gray-300 focus:outline-none focus:border-[#5579d1] text-xs placeholder-gray-400 pb-1"
+            className="bg-white border border-[#5579d1] rounded-md py-2 px-4 text-[9px] text-[#5579d1] font-light tracking-widest focus:outline-none focus:border-[#5579d1] placeholder-gray-400"
           />
           <input
             type="password"
             placeholder="Password"
-            className="border-b border-gray-300 focus:outline-none focus:border-[#5579d1] text-xs placeholder-gray-400 pb-1"
+            className="bg-white border border-[#5579d1] rounded-md py-2 px-4 text-[9px] text-[#5579d1] font-light tracking-widest focus:outline-none focus:border-[#5579d1] placeholder-gray-400"
           />
           <button
             type="submit"
