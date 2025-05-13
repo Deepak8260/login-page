@@ -5,7 +5,7 @@ import SignUp from './components/SignUp'
 
 const App = () => {
   return (
-    <div className="bg-[#5579d1] min-h-screen flex items-center justify-center p-6">
+    <div className="bg-[#5579d1] min-h-screen w-screen flex items-center justify-center">
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />

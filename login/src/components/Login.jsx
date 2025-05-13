@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
-    <main className="flex max-w-6xl w-full bg-white rounded-tr-3xl rounded-br-3xl overflow-hidden">
-      {/* Left side */}
-      <section className="bg-[#a9c0f0] flex flex-col justify-between p-10 sm:p-16 md:p-20 w-72 sm:w-96 md:w-[400px] rounded-tl-3xl rounded-bl-3xl">
+    <main className="flex h-screen">
+      {/* Left side - fixed width */}
+      <section className="bg-[#a9c0f0] flex flex-col justify-between p-10 sm:p-16 md:p-20 w-[400px] rounded-tl-3xl rounded-bl-3xl">
         <div>
           <h1 className="text-white text-2xl sm:text-3xl leading-snug max-w-xs">
             Welcome back to <br />
@@ -26,8 +26,8 @@ const Login = () => {
         </p>
       </section>
 
-      {/* Right side */}
-      <section className="flex-1 p-10 sm:p-16 md:p-20 flex flex-col items-center justify-center">
+      {/* Right side - contained width with white background */}
+      <section className="flex-1 bg-white p-10 sm:p-16 md:p-20 flex flex-col items-center justify-center rounded-tr-3xl rounded-br-3xl">
         <h2
           className="font-mono-bold text-black text-lg mb-8 select-none"
           style={{ letterSpacing: '0.05em' }}
@@ -40,7 +40,7 @@ const Login = () => {
             Login with Google
           </button>
           <button className="flex-1 bg-white border border-[#5579d1] rounded-md py-2 text-[9px] text-center text-[#5579d1] font-light tracking-widest">
-          Login with Facebook
+            Login with Facebook
           </button>
         </div>
 
@@ -53,7 +53,7 @@ const Login = () => {
         </div>
 
         <form className="w-full max-w-md flex flex-col gap-6">
-        <input
+          <input
             type="email"
             placeholder="Email"
             className="bg-white border border-[#5579d1] rounded-md py-2 px-4 text-[9px] text-[#5579d1] font-light tracking-widest focus:outline-none focus:border-[#5579d1] placeholder-gray-400"
